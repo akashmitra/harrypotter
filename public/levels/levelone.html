@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="hpApp">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Harry Potter and the Order of Nintendo</title>
+    <link href="../stylesheets/style.css" type="text/css" rel="stylesheet" media="all"> 
+</head>
+<body ng-controller="LandingCtrl">
+
+    <div class="points red"><span>Dragon Eggs :: {{score}}</span> </div>
+    <div class="points blue"><span>Shield :: {{shieldscore}}</span>  </div>
+    <div class="points green"><spanh4>Health :: {{healthscore}}</span>  </div>
+    
+    <br><br>
+    <div id="hp-game"></div>
+
+    <!-- API Scripts-->
+    <script type="text/javascript" src="../js/lib/angular.min.js"></script>
+    <script type="text/javascript" src="../js/lib/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/lib/phaser.min.js"></script>
+
+    <!-- Control Scripts-->
+    <script type="text/javascript" src="../js/controllers/landingctrl.js"></script>
+    <script type="text/javascript" src="../js/controllers/services.js"></script>
+    <script type="text/javascript" src="../js/gamecontrol/levelOne.js"></script>
+    <script type="text/javascript" src="../js/renderer/scene-one.js"></script>
+    <script type="text/javascript" src="../js/renderer/characters.js"></script>
+    <script type="text/javascript" src="../js/gameengine/collectbrownie.js"></script>
+    <script type="text/javascript" src="../js/gameengine/magic.js"></script>
+</body>
+</html>
