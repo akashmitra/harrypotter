@@ -1,4 +1,6 @@
 (function () {
+    'use strict';
+
     angular
         .module('hpApp')
         .service('Spells', spells);
@@ -11,6 +13,8 @@
           * @return {player} 
          */
         this.createPatronus = function (game) {
+
+            var patronus;
             //  Our patronus group
             patronus = game.add.group();
             patronus.enableBody = true;
@@ -29,6 +33,7 @@
          * @return
          */
         this.createSectumsempra = function (game) {
+            var sectumsempra;
             //sectumsempra groups
             sectumsempra = game.add.group();
             sectumsempra.enableBody = true;
@@ -46,7 +51,8 @@
          * @param 
          * @return
          */
-        this.createAvadakedavra = function(game){
+        this.createAvadakedavra = function (game) {
+            var avadakedavra;
             //avadakedavra groups
             avadakedavra = game.add.group();
             avadakedavra.enableBody = true;
@@ -67,7 +73,7 @@
         */
         this.createProtego = function (game, player) {
 
-            var protegototalum = game.add.spritesheet(player.body.x, player.body.y,'protego');
+            var protegototalum = game.add.spritesheet(player.body.x, player.body.y, 'protego');
 
             game.physics.arcade.enable(protegototalum);
             protegototalum.body.bounce.y = 0.2;
@@ -91,6 +97,7 @@
          * @return {player} 
         */
         this.createExpelliarmus = function (game) {
+            var expelliarmus;
             //expelliarmus groups
             expelliarmus = game.add.group();
             expelliarmus.enableBody = true;
@@ -105,8 +112,6 @@
         };
 
 
-
-
     }
     /*End Of LocalSpace*/
-} ());
+}());

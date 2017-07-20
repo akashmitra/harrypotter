@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.points{
+    float: left;
+    padding: 5px;
+    border: 1px black dotted;
+    font-weight: bold;
+}
+
+.red{
+    font: red;
+}
+
+.blue{
+    font: blue;
+}
+
+.green{
+    font: dark green;
+}

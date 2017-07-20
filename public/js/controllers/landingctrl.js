@@ -1,15 +1,17 @@
 (function () {
+    'use strict';
+
     angular
-        .module('hpApp', [])
-        .controller('LandingCtrl', landingController);
+        .module('hpApp')
+        .controller('LandingController', LandingController);
 
     /**
      * Controller for Landing Page
      * @author Akash Mitra 
      * @desc Bootloader controller for angular module contains
-     * the initial logic */
-
-    function landingController($scope, $http, $window, LevelOne, SharedDataService) {
+     * the initial logic 
+     * */
+    function LandingController($scope, SharedDataService, LevelOne) {
         var sc = $scope;
         sc.title = "Hello World";
         sc.score = 0;
@@ -29,6 +31,4 @@
 
     }
 
-} ());
-
-
+}());

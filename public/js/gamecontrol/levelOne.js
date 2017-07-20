@@ -1,4 +1,6 @@
 (function () {
+    'use strict';
+
     angular
         .module('hpApp')
         .service('LevelOne', levelOne);
@@ -17,19 +19,32 @@
 
             /**Scene Variable*/
             var player;
+            var voldy;
             var platforms;
+            var ground;
+            var ledge;
             var cursors;
             var goldeneggs;
             var patronus;
             var explosions;
+            var dementors_one, dementors_two;
 
+            /** Spells */
+            var protegototalum;
+            var enemyshield;
+            var avadakedavra, expelliarmus, sectumsempra;
+            var protegoKey = [];
+            var expectopatronusKey = [];
+            var expelliarmusKey = [];
+            var patronus_0 = [];
 
+            /** Timers */
             var spellTime = 0;
             var firingTimer = 0;
             var isShieldDisable = true;
             var isEnemyArmed = true;
 
-            /* Scoring Parameters */
+            /** Scoring Parameters */
             var eggscore = 0;
             var healthscore = 100;
             var shieldscore = 5;
@@ -38,13 +53,13 @@
                 healthscore: healthscore,
                 shieldscore: shieldscore
             };
-
             var enemyshieldscore = 5;
             var enemylifescore = 100;
             var enemyscore = {
                 enemyshieldscore: enemyshieldscore,
                 enemylifescore: enemylifescore
             };
+
 
 
             /**
@@ -240,7 +255,7 @@
              * @author Akash
              */
             function collectbroomstick(player, broom) {
-                temp = CollectBrownie.collectBroomstick(player, broom, score);
+                var temp = CollectBrownie.collectBroomstick(player, broom, score);
                 player = temp.player;
                 SharedDataService.prepForBroadcast(temp.score);
             }
@@ -252,7 +267,7 @@
              */
             function hitdementor(player, dementors) {
                 if (game.time.now > spellTime) {
-                    temp = CollectBrownie.hitDementor(game, player, dementors, score);
+                    var temp = CollectBrownie.hitDementor(game, player, dementors, score);
                     dementors = temp.dementors;
                     SharedDataService.prepForBroadcast(temp.score);
                     spellTime = game.time.now + 100; //200 is the time interval
@@ -266,7 +281,7 @@
              */
             function getPortkey(player, portkeys) {
                 if (score.eggscore >= 5) {
-                    temp = CollectBrownie.collectPortkey(game, player, portkeys, score);
+                    var temp = CollectBrownie.collectPortkey(game, player, portkeys, score);
                     SharedDataService.prepForBroadcast(temp.score);
                 }
                 else { return 0; }
@@ -328,7 +343,7 @@
                 //  To avoid them being allowed to fire too fast we set a time limit
                 if (game.time.now > spellTime) {
                     //  Grab the first patronus we can from the pool
-                    expelliarmus_0 = expelliarmus.getFirstExists(false);
+                    var expelliarmus_0 = expelliarmus.getFirstExists(false);
 
                     if (expelliarmus_0) {
                         //  And fire it
@@ -347,7 +362,7 @@
              */
             function EnemyFires() {
                 //  Grab the first bullet we can from the pool
-                avadakedavra_0 = avadakedavra.getFirstExists(false);
+                var avadakedavra_0 = avadakedavra.getFirstExists(false);
 
                 if (avadakedavra_0) {
                     avadakedavra_0.reset(voldy.body.x, voldy.body.y);
@@ -468,7 +483,6 @@
             }
 
 
-
             // function setupDementor(dementors) {
             //     dementors.anchor.x = 0.5;
             //     dementors.anchor.y = 0.5;
@@ -495,4 +509,4 @@
 
     } //End of levelOne Service
     /*End Of LocalSpace*/
-} ());
+}());

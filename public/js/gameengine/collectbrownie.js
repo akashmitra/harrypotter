@@ -1,4 +1,6 @@
 (function () {
+    'use strict';
+
     angular
         .module('hpApp')
         .service('CollectBrownie', collectBrownie);
@@ -64,4 +66,4 @@
 
     }
     /*End Of LocalSpace*/
-} ());
+}());

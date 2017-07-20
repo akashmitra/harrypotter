@@ -1,25 +1,30 @@
 <!doctype html>
 <html lang="en" ng-app="hpApp">
-
 <head>
     <meta charset="UTF-8" />
     <title>Harry Potter and the Hacked ROM</title>
     <link href="styles/style.css" type="text/css" rel="stylesheet" media="all"> 
 </head>
-<body ng-controller="LandingCtrl as landing">
-	<h1>Hello World</h1>
-    <!--<h1>{{landing.title}}</h1>    -->
+<body ng-controller="LandingController">
+
+	<h1>{{title}}</h1>
+
+    <br><br>
 
     <!-- API Scripts-->
     <script type="text/javascript" src="js/lib/angular.min.js"></script>
     <script type="text/javascript" src="js/lib/ui-bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lib/phaser.min.js"></script>
+    
+    <script type="text/javascript" src="js/app.module.js"></script>
+    <script type="text/javascript" src="js/controllers/landingctrl.js"></script>
+    <script type="text/javascript" src="js/controllers/services.js"></script>
 
     <!-- Control Scripts-->
-    <script type="text/javascript" src="js/controllers/landingctrl.js"></script>
     <script type="text/javascript" src="js/gamecontrol/levelOne.js"></script>
     <script type="text/javascript" src="js/renderer/scene-one.js"></script>
     <script type="text/javascript" src="js/renderer/characters.js"></script>
     <script type="text/javascript" src="js/gameengine/collectbrownie.js"></script>
+    <script type="text/javascript" src="js/gameengine/magic.js"></script>
 </body>
 </html>

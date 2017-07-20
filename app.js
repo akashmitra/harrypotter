@@ -1,29 +1,35 @@
-/**
- * Module dependencies.
- */
+(function () {
+    'use strict';
 
-var express = require('express'),
-    http = require('http'),
-    path = require('path'),
-    log4js = require('log4js');
+    /**
+     * Module dependencies.
+     * @author: Akash
+     */
 
-var app = express();
+    var express = require('express'),
+        http = require('http'),
+        path = require('path'),
+        log4js = require('log4js');
 
-/* Injecting the Helper Classes */
-var logger = require('./log');
-//var db = require('./models/db');
+    var app = express();
 
-/*JS client side files has to be placed under a folder by name 'public' */
-app.use(express.static(path.join(__dirname, 'public')));
-/*to access the posted data from client using request body*/
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(express.favicon());
+    /* Injecting the Helper Classes */
+    var logger = require('./log');
+    //var db = require('./models/db');
 
-//app.get('/', routes.index);
-//app.get('/users', user.list);
+    /*JS client side files has to be placed under a folder by name 'public' */
+    app.use(express.static(path.join(__dirname, 'public')));
+    /*to access the posted data from client using request body*/
+    app.use(express.bodyParser());
+    app.use(express.methodOverride());
+    app.use(express.favicon());
 
-/* Server at 80 */
-http.createServer(app).listen(80, function () {
-    logger.trace("Express server listening on port 80");
-});
+    //app.get('/', routes.index);
+    //app.get('/users', user.list);
+
+    /* Server at 80 */
+    http.createServer(app).listen(80, function () {
+        logger.trace("Express server listening on port 80");
+    });
+
+}());
