@@ -29,7 +29,7 @@
 
     /* Server at 80 */
     http.createServer(app).listen(3000, function () {
-        logger.trace("Express server listening on port 3000");
+        logger.trace("Express server listening on port 3000 ");
     });
 
 }());

@@ -457,7 +457,6 @@
                 SharedDataService.prepForBroadcast(score);
             }
 
-
             /**
             * Disarm Voldy 
             * @author Akash
