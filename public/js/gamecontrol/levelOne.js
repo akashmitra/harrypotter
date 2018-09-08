@@ -19,6 +19,8 @@
 
             /**Scene Variable*/
             var player;
+            var points;
+            
             var voldy;
             var platforms;
             var ground;

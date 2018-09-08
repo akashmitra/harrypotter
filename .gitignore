@@ -1,6 +1,5 @@
 npm-debug.log
 dev.log
 Thumbs.db
-node_modules/
-.idea/
-.vscode/
+./vscode
+./node_modules

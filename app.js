@@ -28,8 +28,8 @@
     //app.get('/users', user.list);
 
     /* Server at 80 */
-    http.createServer(app).listen(80, function () {
-        logger.trace("Express server listening on port 80");
+    http.createServer(app).listen(3000, function () {
+        logger.trace("Express server listening on port 3000");
     });
 
 }());
