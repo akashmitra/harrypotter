@@ -73,7 +73,7 @@
     "minimist": "^0.0.8",
     "mongodb": "^2.0.48",
     "on-headers": "^1.0.1",
-    "negotiator": "^0.5.3",
+    "negotiator": "^0.6.2",
     "path-to-regexp": "^0.1.7",
     "optimist": "^0.3.7",
     "pause": "^0.0.1",
