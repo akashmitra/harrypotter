@@ -70,7 +70,7 @@
     "mkdirp": "^0.3.4",
     "mime": "^1.4.1",
     "ms": "^0.7.1",
-    "minimist": "^0.0.8",
+    "minimist": "^1.2.5",
     "mongodb": "^2.0.48",
     "on-headers": "^1.0.1",
     "negotiator": "^0.6.2",
