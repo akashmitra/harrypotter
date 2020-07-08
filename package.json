@@ -66,7 +66,7 @@
     "merge-descriptors": "^1.0.1",
     "mime-db": "^1.23.0",
     "mime-types": "^2.1.11",
-    "mongoose": "^4.2.7",
+    "mongoose": "^5.9.22",
     "mkdirp": "^0.3.4",
     "mime": "^1.4.1",
     "ms": "^0.7.1",
