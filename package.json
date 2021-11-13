@@ -43,7 +43,7 @@
     "escape-html": "^1.0.3",
     "etag": "^1.7.0",
     "cookie-signature": "^1.0.1",
-    "finalhandler": "^0.4.1",
+    "finalhandler": "^0.5.1",
     "decamelize": "^1.2.0",
     "formidable": "^1.0.14",
     "http-errors": "^1.5.0",
