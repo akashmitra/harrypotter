@@ -54,7 +54,7 @@
     "ipaddr.js": "^1.0.5",
     "is-promise": "^2.1.0",
     "jquery": "^3.0.0",
-    "jstransformer": "^0.0.2",
+    "jstransformer": "^0.0.4",
     "kind-of": "^3.0.4",
     "lazy-cache": "^1.0.4",
     "log4js": "^0.6.29",
