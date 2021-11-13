@@ -60,7 +60,7 @@
     "log4js": "^0.6.29",
     "media-typer": "^0.3.0",
     "graceful-readlink": "^1.0.1",
-    "iconv-lite": "^0.4.13",
+    "iconv-lite": "^0.6.3",
     "methods": "^0.0.1",
     "longest": "^1.0.1",
     "merge-descriptors": "^1.0.1",
