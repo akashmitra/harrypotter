@@ -18,7 +18,7 @@
     "align-text": "^0.1.4",
     "array-flatten": "^1.1.1",
     "asap": "^1.0.0",
-    "async": "^0.9.2",
+    "async": "^3.2.2",
     "2kenizer": "^0.1.6",
     "acorn": "^2.7.0",
     "amdefine": "^1.0.0",
