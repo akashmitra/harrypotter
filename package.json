@@ -45,7 +45,7 @@
     "cookie-signature": "^1.0.1",
     "finalhandler": "^0.4.1",
     "decamelize": "^1.2.0",
-    "formidable": "^1.0.14",
+    "formidable": "^3.2.4",
     "http-errors": "^1.5.0",
     "forwarded": "^0.1.2",
     "fresh": "^0.5.2",
