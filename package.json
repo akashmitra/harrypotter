@@ -96,7 +96,7 @@
     "utils-merge": "^1.0.0",
     "basic-auth": "^1.0.4",
     "void-elements": "^2.0.1",
-    "window-size": "^0.1.0",
+    "window-size": "^0.3.0",
     "with": "^4.0.3",
     "wordwrap": "^0.0.3",
     "vary": "^1.0.1",
